@@ -1,0 +1,67 @@
+:root{
+
+    --speed : 2;
+    --anime : "";
+    --count : 10
+}
+.machine {
+
+    background-color: brown;
+    width: 750px;
+    height: 300px;
+    border: dashed greenyellow 4px;
+    margin: 50px;
+    margin-left: 250px;
+
+    display: flex;
+
+} 
+#speed{
+
+    font-size: 40px;
+    width: 100px;
+}
+.slot{
+
+    background-color: yellow;
+    margin:30px;
+    height: 200px;
+    width: 250px;
+    border: solid blue 4px;
+    font-size: 120px;
+    text-align: center;
+    line-height: 210px;
+    
+    overflow: hidden;
+
+}
+.buttons{
+
+    text-align: center;
+}
+.btn{
+
+
+    margin: 30px;
+   width: 100px;
+   height:30px;
+}
+
+.value{
+
+    animation: var(--anime);
+
+}
+
+
+@keyframes slotspin {
+    0% {
+
+        transform: translateY(-200px);
+    }
+    100% {
+
+        transform: translateY(200px);
+    }
+    
+}
